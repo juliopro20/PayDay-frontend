@@ -1,0 +1,228 @@
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap site-header__inner">
+    <a class="brand" href="index.html">
+          <img src="logo.jpg" alt="" style="width: 50px; height: 50px; box-shadow: 0 0 5px rgb(160, 157, 157); border-radius: 10px;">
+      PayDay
+    </a>
+
+    <input class="nav-toggle" type="checkbox" id="nav-toggle">
+    <label class="nav-btn" for="nav-toggle" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </label>
+
+    <nav class="nav" aria-label="Main">
+      <ul>
+        <li  routerLink="/"><a >Home</a></li>
+        <li routerLink="/about"><a >About</a></li>
+        <li routerLink="/faq"><a aria-current="page">FAQ</a></li>
+        <li routerLink="/contact"><a >Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+    
+      <a class="btn btn--primary btn--sm" href="contact.html">Get Started</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="wrap page-hero">
+    <div class=" page-hero__inner">
+      <span class="eyebrow">
+        <i aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 2 4.5 13.2H11l-1 8.8 8.5-11.2H12z"/></svg></i>
+        HELP CENTER
+      </span>
+      <h1>Questions, answered</h1>
+      <p>Everything customers ask us most often about wallets, transfers, fees and
+         security. Jump to a section, or read straight through.</p>
+
+      <ul class="jump">
+        <li><a href="#getting-started">Getting started</a></li>
+        <li><a href="#payments">Payments &amp; transfers</a></li>
+        <li><a href="#fees">Fees &amp; limits</a></li>
+        <li><a href="#security">Security</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="wrap section">
+    <div class="wrap faq-wrap">
+
+      <div class="faq-group" id="getting-started">
+        <h2>Getting started</h2>
+
+        <details class="qa" open>
+          <summary>What do I need to open a PayDay wallet?<span class="qa__sign" aria-hidden="true"></span></summary>
+          <div class="qa__body">
+            <p>A phone number registered in Cameroon and a valid ID: national identity
+               card, passport or residence permit. Verification usually completes in
+               under five minutes.</p>
+          </div>
+        </details>
+
+        <details class="qa">
+          <summary>Can I use PayDay without a bank account?<span class="qa__sign" aria-hidden="true"></span></summary>
+          <div class="qa__body">
+            <p>Yes. You can fund your wallet entirely from MTN MoMo or Orange Money,
+               and withdraw at any agent location. A bank account is optional and only
+               needed for large settlements.</p>
+          </div>
+        </details>
+
+        <details class="qa">
+          <summary>Which devices does the app support?<span class="qa__sign" aria-hidden="true"></span></summary>
+          <div class="qa__body">
+            <p>Android 8 and above, iOS 14 and above. If your phone is older, the web
+               wallet works in any modern browser and supports the same transfers.</p>
+          </div>
+        </details>
+      </div>
+
+      <div class="faq-group" id="payments">
+        <h2>Payments &amp; transfers</h2>
+
+        <details class="qa">
+          <summary>How long does a transfer take?<span class="qa__sign" aria-hidden="true"></span></summary>
+          <div class="qa__body">
+            <p>PayDay-to-PayDay transfers settle in about six seconds. Transfers to MTN
+               MoMo or Orange Money depend on the network and normally complete within
+               two minutes, or fifteen during peak hours.</p>
+          </div>
+        </details>
+
+        <details class="qa">
+          <summary>My transfer says "pending". What now?<span class="qa__sign" aria-hidden="true"></span></summary>
+          <div class="qa__body">
+            <p>Pending means the receiving network has not confirmed yet. Wait fifteen
+               minutes before acting: the money stays in your account and is never
+               debited twice. If it is still pending after that, send us the reference
+               shown on the transaction and we will trace it.</p>
+          </div>
+        </details>
+
+        <details class="qa">
+          <summary>Which bills can I pay?<span class="qa__sign" aria-hidden="true"></span></summary>
+          <div class="qa__body">
+            <p>ENEO electricity, Camwater, Canal+ subscriptions, airtime and data
+               bundles for all networks. Bill payments post to the provider the same
+               day.</p>
+          </div>
+        </details>
+
+        <details class="qa">
+          <summary>Can I accept payments for my business?<span class="qa__sign" aria-hidden="true"></span></summary>
+          <div class="qa__body">
+            <p>Yes. A merchant account gives you a payment link, a QR code for the
+               counter, and a REST API with test keys. Settlement runs daily to your
+               wallet or bank account.</p>
+          </div>
+        </details>
+      </div>
+
+      <div class="faq-group" id="fees">
+        <h2>Fees &amp; limits</h2>
+
+        <details class="qa">
+          <summary>What does PayDay cost?<span class="qa__sign" aria-hidden="true"></span></summary>
+          <div class="qa__body">
+            <p>Opening and holding a wallet is free. Sending to another PayDay wallet is
+               free. Cash-out and cross-network transfers carry a single fee shown on
+               the confirmation screen before you approve.</p>
+            <table class="fee-table">
+              <caption>Typical fees</caption>
+              <thead>
+                <tr><th scope="col">Action</th><th scope="col">Fee</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>PayDay to PayDay</td><td>Free</td></tr>
+                <tr><td>Wallet to MTN MoMo or Orange Money</td><td>1.0%</td></tr>
+                <tr><td>Agent withdrawal</td><td>1.5%</td></tr>
+                <tr><td>Bill payment</td><td>FCFA 100 flat</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </details>
+
+        <details class="qa">
+          <summary>Are there transaction limits?<span class="qa__sign" aria-hidden="true"></span></summary>
+          <div class="qa__body">
+            <p>A verified personal wallet can send up to FCFA 1,000,000 per day and hold
+               up to FCFA 5,000,000. Merchant accounts are set higher after review.</p>
+          </div>
+        </details>
+
+        <details class="qa">
+          <summary>Do you charge for an inactive account?<span class="qa__sign" aria-hidden="true"></span></summary>
+          <div class="qa__body">
+            <p>No. There are no dormancy fees, no monthly charges and no minimum
+               balance.</p>
+          </div>
+        </details>
+      </div>
+
+      <div class="faq-group" id="security">
+        <h2>Security</h2>
+
+        <details class="qa">
+          <summary>How are my funds protected?<span class="qa__sign" aria-hidden="true"></span></summary>
+          <div class="qa__body">
+            <p>Customer balances are held with partner banks and kept separate from
+               company money. PayDay operates under CEMAC regulation and is audited
+               annually.</p>
+          </div>
+        </details>
+
+        <details class="qa">
+          <summary>I lost my phone. What should I do?<span class="qa__sign" aria-hidden="true"></span></summary>
+          <div class="qa__body">
+            <p>Dial <strong>#237#</strong> from any line linked to your account to freeze
+               the wallet, then call support to confirm your identity. Your balance
+               stays intact while the wallet is frozen.</p>
+          </div>
+        </details>
+
+        <details class="qa">
+          <summary>Will PayDay ever ask for my PIN?<span class="qa__sign" aria-hidden="true"></span></summary>
+          <div class="qa__body">
+            <p>Never. No employee, agent or support message will ask for your PIN or a
+               one-time code. Anyone who does is attempting fraud, and you should report
+               it to us immediately.</p>
+          </div>
+        </details>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="wrap cta-band__inner">
+      <div>
+        <h2>Still stuck?</h2>
+        <p>Send the details to our support team and we will reply within a day.</p>
+      </div>
+      <a class="btn btn--light" href="contact.html">Contact support</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap site-footer__inner">
+    <a class="brand" href="index.html">
+      <span class="brand__mark"><span>PD</span></span>
+      PayDay
+    </a>
+    <ul class="footer-links">
+      <li><a href="faq.html">Terms of Service</a></li>
+      <li><a href="faq.html">Privacy Policy</a></li>
+      <li><a href="faq.html">Help Center</a></li>
+      <li><a href="about.html">Developer API</a></li>
+      <li><a href="about.html">Compliance</a></li>
+    </ul>
+    <p class="footer-note">&copy; 2024 PayDay Cameroon. Licensed by the Central Bank of CEMAC.</p>
+  </div>
+</footer>

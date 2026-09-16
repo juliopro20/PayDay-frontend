@@ -1,0 +1,217 @@
+<header class="site-header">
+  <div class="wrap site-header__inner">
+    <a class="brand" href="index.html">
+    <img src="logo.jpg" alt="" style="width: 50px; height: 50px; box-shadow: 0 0 5px rgb(160, 157, 157); border-radius: 10px;">
+      PayDay
+    </a>
+
+    <input class="nav-toggle" type="checkbox" id="nav-toggle">
+    <label class="nav-btn" for="nav-toggle" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </label>
+
+    <nav class="nav" aria-label="Main">
+      <ul>
+        <li routerLink="/"><a aria-current="page">Home</a></li>
+        <li routerLink="/about"><a >About</a></li>
+        <li routerLink="/faq"><a >FAQ</a></li>
+        <li routerLink="/contact"><a >Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <a class="btn btn--primary btn--sm" href="contact.html">Get Started</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ hero ============ -->
+  <section class="hero">
+    <div class="wrap hero__inner">
+      <div class="hero__copy">
+        <span class="eyebrow">
+          <i aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 2 4.5 13.2H11l-1 8.8 8.5-11.2H12z"/></svg>
+          </i>
+          FAST &amp; SECURE
+        </span>
+
+        <h1>Everyday is a <span class="accent">PayDay</span></h1>
+
+        <p class="hero__lead">
+          Experience seamless digital payments across Cameroon. Send, receive, and
+          manage your money instantly with MTN and Orange Money integration. Built
+          for reliability, designed for you.
+        </p>
+
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="contact.html">
+            Get Started
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15"/><path d="m13 6 6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn--ghost" href="contact.html">
+            Download App
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 11 5 5 5-5"/><path d="M4 20h16"/></svg>
+          </a>
+        </div>
+
+        <div class="trust">
+          <ul class="trust__avatars" aria-hidden="true">
+            <li class="av av--1"></li>
+            <li class="av av--2"></li>
+            <li class="av av--3"></li>
+            <li class="av av--count">10k+</li>
+          </ul>
+          <p class="trust__text">Trusted by thousands<br>across Cameroon</p>
+        </div>
+      </div>
+
+      <!-- phone mockup, built with markup only -->
+      <div class="hero__visual">
+        <div class="stage">
+          <div class="phone">
+            <div class="phone__notch" aria-hidden="true"></div>
+            <div class="phone__screen">
+              <div class="app-bar">
+                <span class="app-bar__brand"><span class="dot">P</span> PayDay</span>
+                <span class="app-bar__icon" aria-hidden="true"></span>
+              </div>
+              <p class="app-greeting">Good morning, Alex</p>
+
+              <div class="balance">
+                <span class="balance__label">Total balance</span>
+                <strong class="balance__value">FCFA 1,489,245</strong>
+                <span class="balance__delta">+2.4%</span>
+              </div>
+
+              <ul class="quick">
+                <li><span class="quick__ico quick__ico--send" aria-hidden="true">&#8593;</span>Send</li>
+                <li><span class="quick__ico" aria-hidden="true">&#8595;</span>Receive</li>
+                <li><span class="quick__ico" aria-hidden="true">&#9776;</span>Bills</li>
+              </ul>
+
+              <p class="tx-title">Transaction history</p>
+              <ul class="tx">
+                <li><span class="tx__ico tx__ico--a"></span><span class="tx__name">Airtime top-up<em>9:20 AM</em></span><span class="tx__amt">&minus;14,900</span></li>
+                <li><span class="tx__ico tx__ico--b"></span><span class="tx__name">Coffee shop<em>8:15 AM</em></span><span class="tx__amt">&minus;5,800</span></li>
+                <li><span class="tx__ico tx__ico--c"></span><span class="tx__name">Salary deposit<em>Yesterday</em></span><span class="tx__amt tx__amt--in">+450,000</span></li>
+                <li><span class="tx__ico tx__ico--d"></span><span class="tx__name">Rent payment<em>2 days ago</em></span><span class="tx__amt">&minus;120,000</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="toast">
+            <span class="toast__check" aria-hidden="true">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4.5 4.5L19 7"/></svg>
+            </span>
+            <span class="toast__meta">
+              <strong>Transfer Success</strong>
+              <em>Just now</em>
+            </span>
+            <strong class="toast__amount">FCFA 50,000</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ how it works ============ -->
+  <section class="section section--tint">
+    <div class="wrap">
+      <div class="section__head">
+        <h2>Simple, Fast, Secure</h2>
+        <p>Managing your money shouldn't be complicated. With PayDay, you can fund,
+            transfer, and withdraw in just a few taps.</p>
+      </div>
+
+      <ol class="steps">
+        <li class="card step">
+          <span class="icon-badge" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10 12 4l9 6"/><path d="M5 10v9"/><path d="M10 10v9"/><path d="M14 10v9"/><path d="M19 10v9"/><path d="M3 20h18"/></svg>
+          </span>
+          <h3>1. Fund Your Wallet</h3>
+          <p>Easily link your bank account, MTN MoMo, or Orange Money to load funds
+             instantly without hidden fees.</p>
+        </li>
+        <li class="card step">
+          <span class="icon-badge" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h5v16h-5"/><path d="M3 12h11"/><path d="m10 8 4 4-4 4"/></svg>
+          </span>
+          <h3>2. Transfer Instantly</h3>
+          <p>Send money to anyone in Cameroon securely. Transactions are processed
+             in real-time with institutional-grade security.</p>
+        </li>
+        <li class="card step">
+          <span class="icon-badge icon-badge--warm" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2.6"/><path d="M6 12h.01M18 12h.01"/></svg>
+          </span>
+          <h3>3. Withdraw Anywhere</h3>
+          <p>Cash out your funds at thousands of agent locations nationwide or
+             transfer back to your mobile money account.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ feature bento ============ -->
+  <section class="section">
+    <div class="wrap bento">
+      <article class="bento__lead">
+        <h2>Seamless Mobile Money Integration</h2>
+        <p>We bridge the gap between traditional banking and modern mobile wallets.
+           Move funds fluidly across networks.</p>
+        <a class="btn btn--light" href="about.html">Learn More</a>
+        <span class="bento__glyph" aria-hidden="true"></span>
+      </article>
+
+      <article class="bento__security">
+        <span class="icon-badge icon-badge--solid" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 5 6v6c0 4.4 3 7.9 7 9 4-1.1 7-4.6 7-9V6z"/><path d="m9 12 2 2 4-4"/></svg>
+        </span>
+        <h3>Bank-Grade Security</h3>
+        <p>Your data and funds are protected by industry-leading encryption and
+           licensed by CEMAC.</p>
+      </article>
+
+      <article class="bento__tile">
+        <div>
+          <h3>Pay Bills Instantly</h3>
+          <p>ENEO, Camwater, and more. Settle utility bills directly from your wallet.</p>
+        </div>
+        <span class="icon-badge" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"/><path d="M9 8h6M9 12h6M9 16h3"/></svg>
+        </span>
+      </article>
+
+      <article class="bento__tile">
+        <div>
+          <h3>Business Ready</h3>
+          <p>Accept payments from customers seamlessly with our merchant tools and APIs.</p>
+        </div>
+        <span class="icon-badge" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h16l-1-4H5z"/><path d="M5 9v11h14V9"/><path d="M9 20v-6h6v6"/></svg>
+        </span>
+      </article>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap site-footer__inner">
+    <a class="brand" href="index.html">
+      <span class="brand__mark"><span>PD</span></span>
+      PayDay
+    </a>
+    <ul class="footer-links">
+      <li><a href="faq.html">Terms of Service</a></li>
+      <li><a href="faq.html">Privacy Policy</a></li>
+      <li><a href="faq.html">Help Center</a></li>
+      <li><a href="about.html">Developer API</a></li>
+      <li><a href="about.html">Compliance</a></li>
+    </ul>
+    <p class="footer-note">&copy; 2024 PayDay Cameroon. Licensed by the Central Bank of CEMAC.</p>
+  </div>
+</footer>

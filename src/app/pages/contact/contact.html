@@ -1,0 +1,173 @@
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap site-header__inner">
+    <a class="brand" href="index.html">
+          <img src="logo.jpg" alt="" style="width: 50px; height: 50px; box-shadow: 0 0 5px rgb(160, 157, 157); border-radius: 10px;">
+      PayDay
+    </a>
+
+    <input class="nav-toggle" type="checkbox" id="nav-toggle">
+    <label class="nav-btn" for="nav-toggle" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </label>
+
+    <nav class="nav" aria-label="Main">
+       <ul>
+        <li  routerLink="/"><a >Home</a></li>
+        <li routerLink="/about"><a >About</a></li>
+        <li routerLink="/faq"><a >FAQ</a></li>
+        <li routerLink="/contact"><a aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+    
+      <a class="btn btn--primary btn--sm" href="contact.html">Get Started</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="wrap page-hero">
+    <div class="wrap page-hero__inner">
+      <span class="eyebrow">
+        <i aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 2 4.5 13.2H11l-1 8.8 8.5-11.2H12z"/></svg></i>
+        WE REPLY WITHIN A DAY
+      </span>
+      <h1>Talk to a person at PayDay</h1>
+      <p>Whether a transfer is stuck, you want to accept payments in your shop, or
+         you need our API keys, send the details below and the right team picks it up.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap contact-grid">
+
+      <div class="form-card">
+        <h2>Send us a message</h2>
+        <p class="form-card__note">Fields marked with an asterisk are required.</p>
+
+        <form class="form" action="#" method="post">
+          <div class="field">
+            <label for="name">Full name *</label>
+            <input id="name" name="name" type="text" autocomplete="name" placeholder="Nkambi Julius" required>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="email">Email *</label>
+              <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+            </div>
+            <div class="field">
+              <label for="phone">Phone number</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+237 6XX XXX XXX">
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="topic">What is this about? *</label>
+            <select id="topic" name="topic" required>
+              <option value="" selected>Choose a topic</option>
+              <option>A transfer or withdrawal</option>
+              <option>Opening a personal wallet</option>
+              <option>Merchant and business accounts</option>
+              <option>Developer API access</option>
+              <option>Press or partnerships</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" rows="6" placeholder="Include the transaction reference if you have one." required></textarea>
+          </div>
+
+          <div class="field field--check">
+            <input id="consent" name="consent" type="checkbox" required>
+            <label for="consent">I agree that PayDay may contact me about this enquiry.</label>
+          </div>
+
+          <button class="btn btn--primary btn--block" type="submit">Send message</button>
+        </form>
+      </div>
+
+      <aside class="contact-side">
+        <article class="info-card">
+          <span class="icon-badge" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+          </span>
+          <h3>Head office</h3>
+          <p>Molyko, Buea<br>South West Region, Cameroon</p>
+          <p class="info-card__extra">Second office: Bonapriso, Douala</p>
+        </article>
+
+        <article class="info-card">
+          <span class="icon-badge" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5c0 8 7 15 15 15l2-3.5-4.5-2.5-2 2a13 13 0 0 1-6.5-6.5l2-2L7.5 3z"/></svg>
+          </span>
+          <h3>Call support</h3>
+          <p><a href="tel:+237600000000">+237 600 000 000</a><br>Toll-free from MTN and Orange lines</p>
+          <p class="info-card__extra">Mon–Sun, 7:00 – 21:00 WAT</p>
+        </article>
+
+        <article class="info-card">
+          <span class="icon-badge icon-badge--warm" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          </span>
+          <h3>Email us</h3>
+          <p>
+            <a href="mailto:support@payday.cm">support@payday.cm</a><br>
+            <a href="mailto:business@payday.cm">business@payday.cm</a>
+          </p>
+          <p class="info-card__extra">Average first reply: 4 hours</p>
+        </article>
+
+        <article class="info-card info-card--dark">
+          <h3>Lost access to your wallet?</h3>
+          <p>Freeze it immediately by dialling <strong>#237#</strong> from your
+             registered line, then call support.</p>
+        </article>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section section--tint">
+    <div class="wrap">
+      <div class="section__head">
+        <h2>Before you write</h2>
+        <p>Most questions we receive already have an answer waiting.</p>
+      </div>
+      <div class="pre-check">
+        <article class="card">
+          <h3>Check your transaction status</h3>
+          <p>Open the app, tap the transaction, and read the status line. Pending
+             transfers clear automatically within 15 minutes.</p>
+        </article>
+        <article class="card">
+          <h3>Read the FAQ</h3>
+          <p>Fees, limits, agent withdrawals and account recovery are covered in
+             detail on our questions page.</p>
+          <a class="inline-link" href="faq.html">Go to the FAQ</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap site-footer__inner">
+    <a class="brand" href="index.html">
+      <span class="brand__mark"><span>PD</span></span>
+      PayDay
+    </a>
+    <ul class="footer-links">
+      <li><a href="faq.html">Terms of Service</a></li>
+      <li><a href="faq.html">Privacy Policy</a></li>
+      <li><a href="faq.html">Help Center</a></li>
+      <li><a href="about.html">Developer API</a></li>
+      <li><a href="about.html">Compliance</a></li>
+    </ul>
+    <p class="footer-note">&copy; 2024 PayDay Cameroon. Licensed by the Central Bank of CEMAC.</p>
+  </div>
+</footer>
