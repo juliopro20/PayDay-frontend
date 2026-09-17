@@ -1,8 +1,6 @@
 /* ==========================================================================
    PayDay Cameroon — base layer
    Shared tokens, header, footer and primitives.
-   This block is identical at the top of every page stylesheet so each page
-   can be served standalone with a single CSS file.
    ========================================================================== */
 
 *,
@@ -227,14 +225,6 @@ ol {
   align-items: center;
   gap: 20px;
 }
-.header-actions .portal {
-  font-size: 0.92rem;
-  font-weight: 600;
-  color: #12294a;
-}
-.header-actions .portal:hover {
-  color: #c2410c;
-}
 
 /* ------------------------------------------------ section scaffolding */
 .section {
@@ -296,12 +286,6 @@ ol {
   background: #f7a072;
   color: #fff;
 }
-.icon-badge--solid {
-  background: #c2410c;
-  color: #fff;
-  width: 52px;
-  height: 52px;
-}
 
 /* ------------------------------------------------ footer */
 .site-footer {
@@ -348,7 +332,7 @@ ol {
   color: #9fb5d6;
 }
 
-/* ------------------------------------------------ responsive: header */
+/* ------------------------------------------------ responsive: header & mobile menu fix */
 @media (max-width: 1040px) {
   .nav ul {
     gap: 24px;
@@ -359,57 +343,57 @@ ol {
 }
 
 @media (max-width: 900px) {
-  :root {
-    --header-h: 72px;
-  }
   .nav-btn {
     display: block;
   }
   .site-header__inner {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    min-height: 72px;
   }
 
-  .nav,
-  .header-actions {
+  .nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #e3e9f3;
     flex-basis: 100%;
     max-height: 0;
     overflow: hidden;
     opacity: 0;
+    visibility: hidden;
     transition:
       max-height 0.3s ease,
-      opacity 0.2s ease;
+      opacity 0.2s ease,
+      visibility 0.2s ease;
+    margin-inline: 0;
   }
   .nav ul {
     flex-direction: column;
     align-items: stretch;
     gap: 0;
+    padding: 10px 24px;
   }
   .nav a {
     display: block;
-    padding: 14px 2px;
+    padding: 12px 2px;
     border-bottom: 1px solid #e3e9f3;
   }
   .nav a[aria-current='page'] {
     border-bottom-color: #e3e9f3;
     color: #c2410c;
   }
+  
   .header-actions {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 12px;
-    padding-bottom: 22px;
-  }
-  .header-actions .portal {
-    padding-top: 14px;
-  }
-  .header-actions .btn {
-    width: 100%;
+    display: none; /* Keeps it clean; you can manage the button inside the mobile menu or as preferred */
   }
 
-  .nav-toggle:checked ~ .nav,
-  .nav-toggle:checked ~ .header-actions {
-    max-height: 560px;
+  .nav-toggle:checked ~ .nav {
+    max-height: 400px;
     opacity: 1;
+    visibility: visible;
   }
 }
 
@@ -436,6 +420,7 @@ ol {
     scroll-behavior: auto !important;
   }
 }
+
 /* ==========================================================================
    Inner-page shared blocks
    ========================================================================== */
@@ -463,65 +448,8 @@ ol {
   max-width: 60ch;
 }
 
-.cta-band {
-  background: #0f2748;
-  color: #b9cae4;
-  padding: 64px 0;
-}
-.cta-band__inner {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-.cta-band h2 {
-  color: #fff;
-  font-size: clamp(1.5rem, 2.8vw, 2rem);
-}
-.cta-band p {
-  margin-top: 12px;
-  font-size: 1rem;
-}
-.cta-band .btn {
-  margin-left: auto;
-}
-
-.ticks {
-  margin-top: 28px;
-  display: grid;
-  gap: 12px;
-}
-.ticks li {
-  position: relative;
-  padding-left: 32px;
-  font-size: 0.99rem;
-}
-.ticks li::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 6px;
-  width: 19px;
-  height: 19px;
-  border-radius: 50%;
-  background: #dbe7fd center/10px 10px no-repeat;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231b3d6b' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m5 13 4.5 4.5L19 7'/%3E%3C/svg%3E");
-}
-
-@media (max-width: 640px) {
-  .page-hero {
-    padding: 52px 0 44px;
-  }
-  .cta-band {
-    padding: 48px 0;
-  }
-  .cta-band .btn {
-    margin-left: 0;
-    width: 100%;
-  }
-}
 /* ==========================================================================
-   Contact page
+   Contact page layout
    ========================================================================== */
 
 .contact-grid {

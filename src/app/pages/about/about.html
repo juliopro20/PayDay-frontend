@@ -2,8 +2,8 @@
 
 <header class="site-header">
   <div class="wrap site-header__inner">
-    <a class="brand" href="index.html">
-          <img src="logo.jpg" alt="" style="width: 50px; height: 50px; box-shadow: 0 0 5px rgb(160, 157, 157); border-radius: 10px;">
+    <a class="brand" routerLink="/">
+      <img src="logo.jpg" alt="" style="width: 50px; height: 50px; box-shadow: 0 0 5px rgb(160, 157, 157); border-radius: 10px;">
       PayDay
     </a>
 
@@ -14,16 +14,15 @@
 
     <nav class="nav" aria-label="Main">
       <ul>
-        <li  routerLink="/"><a >Home</a></li>
-        <li routerLink="/about"><a aria-current="page">About</a></li>
-        <li routerLink="/faq"><a >FAQ</a></li>
-        <li routerLink="/contact"><a >Contact</a></li>
+        <li><a routerLink="/">Home</a></li>
+        <li><a routerLink="/about" aria-current="page">About</a></li>
+        <li><a routerLink="/faq">FAQ</a></li>
+        <li><a routerLink="/contact">Contact</a></li>
       </ul>
     </nav>
 
     <div class="header-actions">
-    
-      <a class="btn btn--primary btn--sm" href="contact.html">Get Started</a>
+      <a class="btn btn--primary btn--sm" routerLink="/contact">Get Started</a>
     </div>
   </div>
 </header>
@@ -165,7 +164,7 @@
 
 <footer class="site-footer">
   <div class="wrap site-footer__inner">
-    <a class="brand" href="#">
+    <a class="brand" routerLink="/">
       <span class="brand__mark"><span>PD</span></span>
       PayDay
     </a>
@@ -176,6 +175,6 @@
       <li><a href="">Developer API</a></li>
       <li><a routerLink="/contact">Compliance</a></li>
     </ul>
-    <p class="footer-note">&copy; 2024 PayDay Cameroon. Licensed by the Central Bank of CEMAC.</p>
+    <p class="footer-note">&copy; 2026 PayDay Cameroon. Licensed by the Central Bank of CEMAC.</p>
   </div>
 </footer>
