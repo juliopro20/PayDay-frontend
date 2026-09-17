@@ -565,7 +565,7 @@ ol {
 }
 .phone {
   position: relative;
-  width: min(272px, 72%);
+  width: min(300px, 72%);
   margin: 0 auto;
   padding: 9px;
   background: #101827;
@@ -957,7 +957,7 @@ ol {
     flex: 1 1 100%;
   }
   .phone {
-    width: min(250px, 80%);
+    width: min(300px, 90%);
   }
   .toast {
     position: static;
