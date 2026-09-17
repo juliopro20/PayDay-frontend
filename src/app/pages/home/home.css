@@ -1,8 +1,6 @@
 /* ==========================================================================
    PayDay Cameroon — base layer
    Shared tokens, header, footer and primitives.
-   This block is identical at the top of every page stylesheet so each page
-   can be served standalone with a single CSS file.
    ========================================================================== */
 
 *,
@@ -401,7 +399,7 @@ ol {
     flex-direction: column;
     align-items: stretch;
     gap: 12px;
-    padding-bottom: 0; /* Removed dead padding-bottom when closed */
+    padding-bottom: 0;
   }
   .header-actions .portal {
     padding-top: 14px;
@@ -410,7 +408,6 @@ ol {
     width: 100%;
   }
 
-  /* When toggled open, safely restore padding to actions */
   .nav-toggle:checked ~ .nav {
     max-height: 560px;
     opacity: 1;
@@ -534,11 +531,25 @@ ol {
   line-height: 1.45;
 }
 
-/* ---------------------------------------------- phone mockup */
+/* ---------------------------------------------- phone mockup & floating animation */
 .hero__visual {
   display: flex;
   justify-content: center;
+  animation: floatVertical 4s ease-in-out infinite;
 }
+
+@keyframes floatVertical {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
 .stage {
   position: relative;
   width: 100%;
@@ -900,7 +911,6 @@ ol {
   }
 }
 
-/* ---------------------------------------------- responsive */
 @media (max-width: 980px) {
   .hero {
     padding: 56px 0 76px;
